@@ -2,8 +2,8 @@ services:
   - type: web
     name: n8n
     env: docker
-    dockerfilePath: ./docker/images/n8n/Dockerfile
-    dockerContext: .
+    image:
+      url: docker.io/n8nio/n8n:latest
     plan: free
     envVars:
       - key: NODE_ENV
